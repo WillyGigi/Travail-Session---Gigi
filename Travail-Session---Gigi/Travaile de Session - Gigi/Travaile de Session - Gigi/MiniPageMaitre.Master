@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PageMaitre.Master"  %>
+
+<script runat="server">
+
+    protected void img_lifting_Click(object sender, ImageClickEventArgs e)
+    {
+        img_lifting.Attributes.Add("onclick", "window.open('http://www.lbdg.ca/profile/index/institut-de-beaute-michelle/549', '_newtab')"); 
+    }
+</script>
+
+
+
+<asp:Content runat="server" ContentPlaceHolderID="cph_contenu"  >
+    
+    
+        <div class="mini_menu">
+            <center>
+            <br />
+            <p>Marre d'être une vieille peau? Venez vous faire un <a href="https://www.larousse.fr/dictionnaires/francais/lifting/47091" target="_blank">lifting</a> !!!</p>
+            <br />
+            <asp:ImageButton
+                ID="img_lifting" 
+                ImageAlign="Middle" 
+                OnClick="img_lifting_Click" 
+                ToolTip="Lien vers extérieur"
+                ImageUrl="~/img/liifting.jpg"   
+                Width="150px" Height="200px"
+                runat="server"/>
+                <br />
+                <br />
+            </center>
+        </div>
+
+        <div class="div_gauche">
+            <asp:ContentPlaceHolder ID="mini_gauche" runat ="server">
+
+        </asp:ContentPlaceHolder> 
+        </div>
+
+        <div class="div_droite">
+            <asp:ContentPlaceHolder ID="mini_droite"   runat ="server">
+
+        </asp:ContentPlaceHolder>
+        </div>
+
+    
+        
+   
+        
+
+</asp:Content>

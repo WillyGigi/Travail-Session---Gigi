@@ -1,0 +1,114 @@
+﻿
+
+ .entete
+{
+    background-color:DarkGray;
+}
+
+.contenu
+{
+    width:100%;
+    background-color: lightgrey;
+ }
+
+
+
+.centre
+{
+    position:relative;
+    left:35%;
+    width:40%;
+}
+
+.img
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stylemenu
+{
+    width: 13em;  
+    background-color: #800080;  
+    color: #F8F8FF;  
+    text-align: center;  
+    height: 1.875em;  
+    line-height: 1.875em;  
+    margin-top:50px;
+    padding:10px;
+}
+
+.stylemenu:hover 
+{
+    background-color:#993D99;
+}
+
+.piedpage
+{
+    background-color:#696969;
+    height:160px;
+}
+
+.ecriture_bas
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    text-align:center;
+}
+
+.GV_Style
+{
+    border:2px solid #4B0082;
+    min-width:15%;
+}
+
+.tb_Entete
+{
+    background-color:#5882FA;
+    font-size:14px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+}
+
+.lgnTableau
+{
+    background-color:#CED8F6;
+}
+
+.alterne
+{
+    background-color:#A9BCF5; 
+             
+}
+
+.mini_menu, .div_gauche, .div_droite
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top:2%;
+}
+
+.mini_menu
+{
+    width:15%;
+    background-color:azure;
+    margin-left:1%;
+    border:2px solid black;
+}
+
+.div_gauche
+{
+    width:40%;
+    margin-left:2%;
+    height:80%;
+}
+
+.div_droite
+{
+    width:40%;
+    height:80%;
+}

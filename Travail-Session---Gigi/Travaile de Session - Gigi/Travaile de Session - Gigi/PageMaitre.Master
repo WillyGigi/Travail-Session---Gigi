@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#"%>
+
+<!DOCTYPE html>
+<script runat="server">
+
+    protected void logo_Click(object sender, ImageClickEventArgs e)
+    {
+        Server.Transfer("Accueil.aspx");
+    }
+</script>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<link rel="stylesheet" href="Style.css" />
+<title>Page maître</title>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+    <div class="entete">
+            <asp:ImageButton
+                ID="logo" ImageAlign="Left" OnClick="logo_Click"
+                ImageUrl="~/img/gigi2.png" 
+                Width="200" Height="100"
+                runat="server"/>
+
+            <asp:Menu 
+                ID="menu" 
+                runat="server" 
+                Orientation="Horizontal">
+                <Items>
+
+                    <asp:MenuItem 
+                        NavigateUrl="~/Accueil.aspx"
+                        Text="Accueil" 
+                        Value="Accueil">
+                    </asp:MenuItem>
+
+                    <asp:MenuItem 
+                        NavigateUrl="~/Donnes.aspx"  
+                        Text="Nos Clients" 
+                        Value="Ma Base de Données">
+                    </asp:MenuItem>
+
+                    <asp:MenuItem 
+                        NavigateUrl="~/Image_Retouche.aspx"
+                        Text="Résultat du lifting" 
+                        Value="bouton">
+                    </asp:MenuItem>
+
+                    <asp:MenuItem 
+                        NavigateUrl="~/Calendrier.aspx"
+                        Text="Prendre rendez-vous"
+                        Value="Rendez-vous">
+                    </asp:MenuItem>
+
+                    <asp:MenuItem  
+                        NavigateUrl="~/Connexion.aspx"
+                        Text="Connexion"
+                        Value="Connexion">
+                    </asp:MenuItem>
+                </Items>
+                <LevelMenuItemStyles>  
+                    <asp:MenuItemStyle CssClass="stylemenu" />
+                </LevelMenuItemStyles>  
+            </asp:Menu>
+    </div>
+
+    <div class="contenu">
+        <asp:ContentPlaceHolder ID="cph_contenu" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="piedpage">
+        
+        <br />
+        <center>
+        <asp:Image 
+                ID="logo_cegep" 
+                ImageUrl="~/img/logocegep.png" 
+                Width="200" Height="100"
+                runat="server"/>
+        
+        <p class="ecriture_bas"> copiright &copy Automne 2018 - TOLUFO Georgie </p>
+        </center>
+    </div>
+
+    </form>
+
+</body>
+</html>
